@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    background-color: #f9fafc;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #fff;
+}
+
+.navbar_brand{
+    width: 70px;
+    height: 70px;
+}
+
+.navbar_logo{
+    width: 100%;
+    height: 100%;
+}
+.nav_item{
+    background-image: linear-gradient(
+        to right,#ff512f 0%,#dd2476 51%,#ff512f 100%
+    );
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+}
+/*To leave some space on the right of button so it cant touch the browser border*/
+.navbar_nav_items{
+    margin-right: 10px;
+}
+.nav_item:hover{
+    border: 2px solid #ff6767;
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .navbar{
+        padding: 10px 0px;
+    }
+    .navbar_nav_items{
+        margin-right: 30px;
+    }
+}
+@media (min-width: 1024px) {
+    .navbar_brand{
+        width: 150px;
+    }
+    .nav_item{
+        padding: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: ;
+    }
+}
